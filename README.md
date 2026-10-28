@@ -88,7 +88,7 @@ Generation defaults are included in the checkpoint. For decoding options and con
 | Backend | Use case | Decoding |
 | --- | --- | --- |
 | [Hugging Face Transformers](#hugging-face-transformers) | Standalone Python inference and experimentation | Block diffusion denoising |
-| [SGLang](#sglang-and-llamacpp) | Serving and evaluation | Block diffusion denoising and Self-speculative decoding |
+| [SGLang](https://github.com/sgl-project/sglang/pull/46927) | Serving and evaluation | Block diffusion denoising and Self-speculative decoding |
 | [llama.cpp](#sglang-and-llamacpp) | Local inference | Self-speculative decoding |
 
 ### SGLang and llama.cpp
