@@ -37,8 +37,7 @@ Built on [Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B), Clover 
 
 ## Performance
 
-[![Clover agentic benchmark results](https://diffuspace.ai/assets/blog/clover/agentic-benchmarks.jpg)](https://diffuspace.ai/blog/clover-35b/#agentic-benchmarks)
-
+[![Clover agentic benchmark results](./benchmark.png)](https://diffuspace.ai/blog/clover-35b/#agentic-benchmarks)
 See the [launch blog](https://diffuspace.ai/blog/clover-35b/#agentic-benchmarks) for benchmark results, evaluation settings, and comparisons.
 
 ## Quick Start
