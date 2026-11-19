@@ -1,0 +1,17 @@
+{
+  "model": "Diffuspace/Clover-35B-A3B-Preview",
+  "revision": "4b0402b65e523d0183a14c431955438714cb16ff",
+  "unmodified_files": {
+    "configuration_clover_moe.py": "f593baeba289a1f54987904f7782f4cfa7b22f9dfc75112768c189108f041d0d",
+    "sampling_clover_moe.py": "56768a0b23c4c7c26dc3b6f075741761ffada7d5fc2ff745c6aea5e3cc88011c"
+  },
+  "patched_files": {
+    "modeling_clover_moe.py": {
+      "upstream_sha256": "2584bd5502d6109c2cea9bee2f2ec98f147bbb8954c43858c0315eb4af9ffb0c",
+      "local_sha256": "3dc98946f4d7ced8fd886b47f07477eabdd5abc69718bad5d291d55830daf21f",
+      "changes": [
+        "Remove preview-only decay from the clean-state history readout; preserve decay in clean recurrence."
+      ]
+    }
+  }
+}

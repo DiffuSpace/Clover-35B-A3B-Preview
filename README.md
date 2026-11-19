@@ -100,7 +100,9 @@ Our SGLang implementation supports both **Block diffusion denoising** and **Self
 
 ## Supervised Fine-Tuning
 
-**Coming soon.** SFT code and training instructions will be released in [`sft/`](./sft/).
+SFT code and training instructions are available in [`sft/`](./sft/). The package
+supports block diffusion fine-tuning with ms-swift, FSDP2 full-parameter training
+and LoRA, with GSM8K as a quick-start example.
 
 ## License and Acknowledgments
 

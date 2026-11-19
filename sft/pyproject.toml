@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clover-sft"
+version = "0.1.0"
+description = "Block diffusion SFT for Clover with ms-swift"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "ATTRIBUTIONS.md"]
+dependencies = [
+    "torch>=2.11,<2.12",
+    "transformers==5.19.0",
+    "ms-swift==4.6.0",
+    "accelerate==1.15.0",
+    "peft==0.20.0",
+    "trl==0.29.1",
+    "flash-linear-attention==0.5.1",
+    "tilelang==0.1.13",
+    "quack-kernels==0.5.0",
+    "nvidia-cutlass-dsl==4.5.2",
+    "datasets==4.8.4",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "ruff==0.9.9"]
+
+[tool.setuptools.packages.find]
+include = ["clover_sft*"]
+
+[tool.ruff]
+line-length = 119
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+"clover_sft/configuration_clover_moe.py" = ["ALL"]
+"clover_sft/modeling_clover_moe.py" = ["ALL"]
+"clover_sft/sampling_clover_moe.py" = ["ALL"]
